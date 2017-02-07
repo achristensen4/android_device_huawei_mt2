@@ -16,7 +16,7 @@ ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
 
 # Camera
-camera2.portability.force_api=1
+camera2.portability.force_api=0
 ro.config.camera_target_track=true
 ro.config.hw_camera_davinci=true
 ro.config.hw_camera_hdr=true
@@ -32,7 +32,6 @@ ro.config.hw_video_beauty=true
 ro.config.hw_photo_beauty=true
 ro.config.hw_camera_bestShot=true
 ro.config.hw_camera_refocus=true
-ro.config.hw_camera_nicefood=true
 
 # GPS
 ro.qc.sdk.izat.premium_enabled=1
@@ -47,7 +46,7 @@ ro.qualcomm.svi=1
 ro.sf.lcd_density=320
 
 # Media
-av.offload.enable=true
+av.offload.enable=false
 av.streaming.offload.enable=false
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
@@ -58,16 +57,16 @@ ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 # Radio
 persist.data.netmgrd.qos.enable=true
 persist.radio.apm_sim_not_pwdn=1
-persist.radio.force_nw_search=1
-persist.radio.msgtunnel.start=false
+persist.radio.force_nw_search=0
+persist.radio.msgtunnel.start=true
 ril.subscription.types=NV,RUIM
 rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.hwpp.cust_ons_bin=true
 ro.telephony.call_ring.multiple=false
-ro.telephony.default_network=9
+ro.telephony.default_network=4
 ro.use_data_netmgrd=true
-telephony.lteOnGsmDevice=1
+telephony.lteOnGsmDevice=0
 
 # Sensors
 ro.qualcomm.sensors.smd=true
